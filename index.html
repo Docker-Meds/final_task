@@ -1,38 +1,586 @@
+<!DOCTYPE html>  
+
+<html lang="en">
 <head>
-    <title>EPAM DevOps online Spring 2021</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <title>MyBlog</title>
+
+  	<!-- Bootstrap core css -->
+  	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+  	<!-- Bootstrap core css -->
+  	<link rel="stylesheet" type="text/css" href="css/style.css">
+  	<!-- Magnific-popup css -->
+  	<link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
+  	<!-- Font Awesome icons -->
+  	<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
-<body>
-  <h1>EPAM DevOps online Spring 2021</h1>
-  <h2>Virtualization and Cloud Basic</h2>
-<div>
-<p> 1. Register in AWS</p>
-<p> 2. Launch a Linux Virtual Machine with Amazon Lightsai and connect to it</p>
-<p> 3. Create first instance  t2.micro</p>
-<p> 4. Create a snapshot of instance</p>
-<p> 5. Create and attach a Disk_D 1GB , save zip file on Disk_D</p>
-<p> 6. Create image with instance from backup and launch</p>
-<p> 7. Detach Disk_D and attach Disk_D to the new instance </p>
-<p> 8. Launch a WordPress instance with Amazon Lightsail</p>
-<p> 9. Work in Amazon S3 , create bucket and upload file with AWS CLI </p>
-<p> 10. Work in AWS IAM , create user </p>
-<p>11. Review Amazon Route 53</p>
-<p> 12. Work with Amazon Elastic Container Service and deploy Docker container , create cluster</p>
-<p> 13. Create a static website on Amazon S3</p>
-</div>
- <p><img src="/var/mycontentapache2/gallery/10.jpg" width="450" height="450" </p>
-  
-  <link rel="stylesheet" href="style.css">
-  <div>
-    <h2>Labs</h2>
-    <li><a href="https://amazon.qwiklabs.com/focuses/15717?catalog_rank=%7B%22rank%22%3A3%2C%22num_filters%22%3A1%2C%22has_search%22%3Afalse%7D&parent=catalog">Introduction to AWS Identity and Access Management (IAM)</a></li>
-    <li><a href="https://amazon.qwiklabs.com/focuses/14761?catalog_rank=%7B%22rank%22%3A6%2C%22num_filters%22%3A1%2C%22has_search%22%3Afalse%7D&parent=catalog">Introduction to Amazon EC2</a></li>
-    <li><a href="https://amazon.qwiklabs.com/focuses/14815?catalog_rank=%7B%22rank%22%3A2%2C%22num_filters%22%3A1%2C%22has_search%22%3Afalse%7D&parent=catalog">Introduction to Amazon DynamoDB</a></li>
-    <li><a href="https://amazon.qwiklabs.com/focuses/16506?catalog_rank=%7B%22rank%22%3A10%2C%22num_filters%22%3A1%2C%22has_search%22%3Afalse%7D&parent=catalog">Introduction to AWS Lambda</a></li>
-    <li><a href="https://amazon.qwiklabs.com/focuses/10383?catalog_rank=%7B%22rank%22%3A9%2C%22num_filters%22%3A1%2C%22has_search%22%3Afalse%7D&parent=catalog">Introduction to Amazon API Gateway</a></li>
-    <li><a href="Create and Connect to a MySQL Database">Create and Connect to a MySQL Database</a></li>
-    <li><a href="https://docs.aws.amazon.com/batch/latest/userguide/create-public-private-vpc.html">Creating a VPC with Public and Private Subnets for Your Compute</a></li>
-  
-  </div>
-  <p>Now hosted on Amazon S3!</p>
+<body id="page-top">
+
+<!-- Navigation Bar -->
+   <nav class="navbar navbar-fixed-top navbar-default">
+     <div class="container">
+         <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a  class="navbar-brand page-scroll" href="#page-top">
+              <span>[PHOTO]</span>
+            </a>
+         </div>
+         <div class="collapse navbar-collapse navbar-right" id="menu">
+            <ul class="nav navbar-nav">
+              <li class="active lien"><a href="#"><i class="fa fa-home sr-icons"></i> Home</a></li>
+              <li><a href="contact.html"><i class="fa fa-phone-square sr-icons"></i> Contact</a></li>
+            </ul>
+         </div>
+     </div>
+   </nav>
+<!-- End of Navigation Bar -->
+
+<!-- Principal Content Start -->
+   <div id="index">
+
+    <!-- Header -->
+      <div class="row">
+         <div class="col-xs-12 intro">
+            <div class="carousel-inner">
+               <div class="item active">
+                <img class="img-responsive" src="Norway/DSC01403.jpg" alt="header picture">
+               </div>
+               <div class="carousel-caption">
+                  <h1>Travel Photo Blog</h1>
+                  <hr>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div id="index-body">
+      
+      <!-- Navigation Table Content -->
+        <div class="tab-content">
+
+        <!-- First Category pictures -->
+           <div id="category1" class="tab-pane active" >
+              <div class="row popup-gallery">
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="sol">
+                  <img class="img-responsive" src="https://d105pgzz9ty5hz.cloudfront.net/fit-in/800x1000/DSC04052.jpg" alt="First category picture">
+                  <div class="behind">
+                      <div class="head text-center">
+                        <ul class="list-inline">
+                          <li>
+                            <a class="gallery" href="https://d105pgzz9ty5hz.cloudfront.net/fit-in/800x1000/DSC04052.jpg" data-toggle="tooltip" data-original-title="Quick View">
+                              <i class="fa fa-eye"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" data-original-title="Click if you like it">
+                              <i class="fa fa-heart"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" data-original-title="Download">
+                              <i class="fa fa-download"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" data-original-title="More information">
+                              <i class="fa fa-info"></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="row box-content">
+                        <ul class="list-inline text-center">
+                          <li><i class="fa fa-eye"></i> 1000</li>
+                          <li><i class="fa fa-heart"></i> 500</li>
+                          <li><i class="fa fa-download"></i> 100</li>
+                        </ul>
+                      </div>
+                  </div>
+                </div>
+                </div> 
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="sol">
+                    <img class="img-responsive" src="images/index/portfolio/2.jpg" alt="First category picture">
+                    <div class="behind"> 
+                        <div class="head text-center">
+                        <ul class="list-inline">
+                          <li>
+                            <a class="gallery" href="images/index/gallery/2.jpg" data-toggle="tooltip" data-original-title="Quick View">
+                              <i class="fa fa-eye"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" data-original-title="Click if you like it">
+                              <i class="fa fa-heart"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" data-original-title="Download">
+                              <i class="fa fa-download"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" data-original-title="More information">
+                              <i class="fa fa-info"></i>
+                            </a>
+                          </li>
+                        </ul>
+                        </div>
+                        <div class="row box-content">
+                        <ul class="list-inline text-center">
+                          <li><i class="fa fa-eye"></i> 1000</li>
+                          <li><i class="fa fa-heart"></i> 500</li>
+                          <li><i class="fa fa-download"></i> 100</li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+                </div> 
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="sol">
+                    <img class="img-responsive" src="images/index/portfolio/14.jpg" alt="First category picture">
+                    <div class="behind">
+                        <div class="head text-center">
+                        <ul class="list-inline">
+                          <li>
+                            <a class="gallery" href="images/index/gallery/14.jpg" data-toggle="tooltip" data-original-title="Quick View">
+                              <i class="fa fa-eye"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" data-original-title="Click if you like it">
+                              <i class="fa fa-heart"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" data-original-title="Download">
+                              <i class="fa fa-download"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" data-original-title="More information">
+                              <i class="fa fa-info"></i>
+                            </a>
+                          </li>
+                        </ul>
+                        </div>
+                        <div class="row box-content">
+                        <ul class="list-inline text-center">
+                          <li><i class="fa fa-eye"></i> 1000</li>
+                          <li><i class="fa fa-heart"></i> 500</li>
+                          <li><i class="fa fa-download"></i> 100</li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+                </div> 
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="sol">
+                    <img class="img-responsive" src="images/index/portfolio/4.jpg" alt="First category picture">
+                    <div class="behind">
+                        <div class="head text-center">
+                        <ul class="list-inline">
+                          <li>
+                            <a class="gallery" href="images/index/gallery/4.jpg" data-toggle="tooltip" data-original-title="Quick View">
+                              <i class="fa fa-eye"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" data-original-title="Click if you like it">
+                              <i class="fa fa-heart"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" data-original-title="Download">
+                              <i class="fa fa-download"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" data-original-title="More information">
+                              <i class="fa fa-info"></i>
+                            </a>
+                          </li>
+                        </ul>
+                        </div>
+                        <div class="row box-content">
+                        <ul class="list-inline text-center">
+                          <li><i class="fa fa-eye"></i> 1000</li>
+                          <li><i class="fa fa-heart"></i> 500</li>
+                          <li><i class="fa fa-download"></i> 100</li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+                </div> 
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="sol">
+                    <img class="img-responsive" src="images/index/portfolio/5.jpg" alt="First category picture">
+                    <div class="behind">
+                        <div class="head text-center">
+                        <ul class="list-inline">
+                          <li>
+                            <a class="gallery" href="images/index/gallery/5.jpg" data-toggle="tooltip" data-original-title="Quick View">
+                              <i class="fa fa-eye"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" data-original-title="Click if you like it">
+                              <i class="fa fa-heart"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" data-original-title="Download">
+                              <i class="fa fa-download"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" data-original-title="More information">
+                              <i class="fa fa-info"></i>
+                            </a>
+                          </li>
+                        </ul>
+                        </div>
+                        <div class="row box-content">
+                        <ul class="list-inline text-center">
+                          <li><i class="fa fa-eye"></i> 1000</li>
+                          <li><i class="fa fa-heart"></i> 500</li>
+                          <li><i class="fa fa-download"></i> 100</li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+                </div> 
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="sol">
+                    <img class="img-responsive" src="images/index/portfolio/8.jpg" alt="First category picture">
+                    <div class="behind">
+                        <div class="head text-center">
+                        <ul class="list-inline">
+                          <li>
+                            <a class="gallery" href="images/index/gallery/8.jpg" data-toggle="tooltip" data-original-title="Quick View">
+                              <i class="fa fa-eye"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" data-original-title="Click if you like it">
+                              <i class="fa fa-heart"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" data-original-title="Download">
+                              <i class="fa fa-download"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" data-original-title="More information">
+                              <i class="fa fa-info"></i>
+                            </a>
+                          </li>
+                        </ul>
+                        </div>
+                        <div class="row box-content">
+                        <ul class="list-inline text-center">
+                          <li><i class="fa fa-eye"></i> 1000</li>
+                          <li><i class="fa fa-heart"></i> 500</li>
+                          <li><i class="fa fa-download"></i> 100</li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+                </div> 
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="sol">
+                    <img class="img-responsive" src="images/index/portfolio/7.jpg" alt="First category picture">
+                    <div class="behind">
+                        <div class="head text-center">
+                        <ul class="list-inline">
+                          <li>
+                            <a class="gallery" href="images/index/gallery/7.jpg" data-toggle="tooltip" data-original-title="Quick View">
+                              <i class="fa fa-eye"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" data-original-title="Click if you like it">
+                              <i class="fa fa-heart"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" data-original-title="Download">
+                              <i class="fa fa-download"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" data-original-title="More information">
+                              <i class="fa fa-info"></i>
+                            </a>
+                          </li>
+                        </ul>
+                        </div>
+                        <div class="row box-content">
+                        <ul class="list-inline text-center">
+                          <li><i class="fa fa-eye"></i> 1000</li>
+                          <li><i class="fa fa-heart"></i> 500</li>
+                          <li><i class="fa fa-download"></i> 100</li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+                </div> 
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="sol">
+                    <img class="img-responsive" src="images/index/portfolio/6.jpg" alt="First category picture">
+                    <div class="behind">
+                        <div class="head text-center">
+                        <ul class="list-inline">
+                          <li>
+                            <a class="gallery" href="images/index/gallery/6.jpg" data-toggle="tooltip" data-original-title="Quick View">
+                              <i class="fa fa-eye"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" data-original-title="Click if you like it">
+                              <i class="fa fa-heart"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" data-original-title="Download">
+                              <i class="fa fa-download"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" data-original-title="More information">
+                              <i class="fa fa-info"></i>
+                            </a>
+                          </li>
+                        </ul>
+                        </div>
+                        <div class="row box-content">
+                        <ul class="list-inline text-center">
+                          <li><i class="fa fa-eye"></i> 1000</li>
+                          <li><i class="fa fa-heart"></i> 500</li>
+                          <li><i class="fa fa-download"></i> 100</li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+                </div> 
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="sol">
+                    <img class="img-responsive" src="images/index/portfolio/9.jpg" alt="First category picture">
+                    <div class="behind">
+                        <div class="head text-center">
+                        <ul class="list-inline">
+                          <li>
+                            <a class="gallery" href="images/index/gallery/9.jpg" data-toggle="tooltip" data-original-title="Quick View">
+                              <i class="fa fa-eye"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" data-original-title="Click if you like it">
+                              <i class="fa fa-heart"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" data-original-title="Download">
+                              <i class="fa fa-download"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" data-original-title="More information">
+                              <i class="fa fa-info"></i>
+                            </a>
+                          </li>
+                        </ul>
+                        </div>
+                        <div class="row box-content">
+                        <ul class="list-inline text-center">
+                          <li><i class="fa fa-eye"></i> 1000</li>
+                          <li><i class="fa fa-heart"></i> 500</li>
+                          <li><i class="fa fa-download"></i> 100</li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+                </div> 
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="sol">
+                    <img class="img-responsive" src="images/index/portfolio/10.jpg" alt="First category picture">
+                    <div class="behind">
+                        <div class="head text-center">
+                        <ul class="list-inline">
+                          <li>
+                            <a class="gallery" href="images/index/gallery/10.jpg" data-toggle="tooltip" data-original-title="Quick View">
+                              <i class="fa fa-eye"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" data-original-title="Click if you like it">
+                              <i class="fa fa-heart"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" data-original-title="Download">
+                              <i class="fa fa-download"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" data-original-title="More information">
+                              <i class="fa fa-info"></i>
+                            </a>
+                          </li>
+                        </ul>
+                        </div>
+                        <div class="row box-content">
+                        <ul class="list-inline text-center">
+                          <li><i class="fa fa-eye"></i> 1000</li>
+                          <li><i class="fa fa-heart"></i> 500</li>
+                          <li><i class="fa fa-download"></i> 100</li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+                </div> 
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="sol">
+                    <img class="img-responsive" src="images/index/portfolio/11.jpg" alt="First category picture">
+                    <div class="behind">
+                        <div class="head text-center">
+                        <ul class="list-inline">
+                          <li>
+                            <a class="gallery" href="images/index/gallery/11.jpg" data-toggle="tooltip" data-original-title="Quick View">
+                              <i class="fa fa-eye"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" data-original-title="Click if you like it">
+                              <i class="fa fa-heart"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" data-original-title="Download">
+                              <i class="fa fa-download"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" data-original-title="More information">
+                              <i class="fa fa-info"></i>
+                            </a>
+                          </li>
+                        </ul>
+                        </div>
+                        <div class="row box-content">
+                        <ul class="list-inline text-center">
+                          <li><i class="fa fa-eye"></i> 1000</li>
+                          <li><i class="fa fa-heart"></i> 500</li>
+                          <li><i class="fa fa-download"></i> 100</li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+                </div> 
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="sol">
+                    <img class="img-responsive" src="images/index/portfolio/13.jpg" alt="First category picture">
+                    <div class="behind">
+                        <div class="head text-center">
+                        <ul class="list-inline">
+                          <li>
+                            <a class="gallery" href="images/index/gallery/13.jpg" data-toggle="tooltip" data-original-title="Quick View">
+                              <i class="fa fa-eye"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" data-original-title="Click if you like it">
+                              <i class="fa fa-heart"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" data-original-title="Download">
+                              <i class="fa fa-download"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" data-original-title="More information">
+                              <i class="fa fa-info"></i>
+                            </a>
+                          </li>
+                        </ul>
+                        </div>
+                        <div class="row box-content">
+                        <ul class="list-inline text-center">
+                          <li><i class="fa fa-eye"></i> 1000</li>
+                          <li><i class="fa fa-heart"></i> 500</li>
+                          <li><i class="fa fa-download"></i> 100</li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+                </div> 
+              </div>
+              <nav class="text-center">
+                <ul class="pagination">
+                  <li class="active"><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#" aria-label="suivant">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a></li>
+                </ul>
+              </nav>
+           </div>
+        <!-- End of First category pictures -->
+
+       
+        <!-- End of second category pictures -->
+
+        <!-- Third Category Pictures -->
+           
+        <!-- Third Category Pictures -->
+
+        </div>
+    <!-- End of Navigation Table Content -->
+      </div><!-- End of Index-body</div> 
+        <!-- End of index box -->
+
+   <!-- Footer -->
+   <footer class="home-page">
+     <div class="container text-muted text-center">
+       <div class="row">
+         <ul class="nav col-sm-4">
+           <li class="footer-number"><i class="fa fa-phone sr-icons"></i>  0991016557 </li>
+           <li><i class="fa fa-envelope sr-icons"></i>  sailormeds@gmail.com</li>
+           <li>Travel &copy; 2021</li>
+         </ul>
+         <ul class="list-inline social-buttons col-sm-4 col-sm-push-4">
+            <li><a href="https://www.facebook.com/jenya.meds/"><i class="fa fa-facebook sr-icons"></i></a>
+            </li>
+         </ul>
+       </div>
+     </div>
+   </footer>
+
+   <!-- Jquery -->
+   <script type="text/javascript" src="js/jquery.min.js"></script>
+   <!-- Bootstrap core Javascript -->
+   <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+   <!-- Plugins -->
+   <script type="text/javascript" src="js/jquery.easing.min.js"></script>
+   <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+   <script type="text/javascript" src="js/scrollreveal.min.js"></script>
+   <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
