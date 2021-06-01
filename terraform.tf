@@ -20,8 +20,8 @@ mkdir /home/ec2-user/s3
 sudo amazon-linux-extras install epel
 sudo yum -y install s3fs-fuse
 sudo s3fs mycontentapache2 /home/ec2-user/s3/ -o iam_role=ec2s3
-sudo cp -avr /home/ec2-user/s3/img /var/www/html/
-sudo chmod 777 /var/www/html/img/
+sudo cp -avr /home/ec2-user/s3/imgages /var/www/html/
+sudo chmod 777 /var/www/html/images/
 
 EOF
 tags = {
