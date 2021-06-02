@@ -14,7 +14,7 @@ resource "aws_instance" "Web" {
 yum -y update
 yum -y install httpd
 sudo service httpd start
-chkonfig httpd on
+chkconfig httpd on
 sudo chgrp -R ec2-user /var/www
 sudo chmod -R a+rw /var/www
 mkdir /home/ec2-user/s3
