@@ -1,0 +1,34 @@
+pipeline {
+    agent any
+    
+    tools {
+        terraform "terraform_aws"
+    }
+    stages {
+        stage ("Checkout from GIT") {
+            steps {
+                git credentialsId: 'github-ssh-key-new', url: 'git@github.com:Docker-Meds/final_task.git'
+            }
+        }
+        stage ("init") {
+            steps {
+                sh 'terraform init'
+            }
+        }
+        stage ("terraform fmt") {
+            steps {
+                sh 'terraform fmt'
+            }
+        }
+        stage ("terraform validate") {
+            steps {
+                sh 'terraform validate'
+            }
+        }
+        stage ("terraform apply") {
+            steps {
+                sh 'terraform apply --auto-approve'
+            }
+        }
+    }
+}
