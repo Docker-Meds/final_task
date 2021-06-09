@@ -176,7 +176,7 @@ footer{
 
 .carousel-caption{
 	position: absolute;
-	bottom: 40%;
+	bottom: 20%;
 	z-index: 10;
 	padding: 2.5%;
 	text-align: center;
