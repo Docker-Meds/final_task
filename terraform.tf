@@ -26,7 +26,7 @@ sudo chmod 777 -R /var/www/html/images/
 
 EOF
 tags = {
- Name = "Apache2_AMI_14.06.21"
+ Name = "Apache2_AMI"
 }
 
 }
